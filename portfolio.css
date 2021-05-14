@@ -232,7 +232,7 @@ footer{
 		display: block;
 		height: 8px;
 		width: 25px;
-		border-top: 3px solid black;
+		border-top: 3px solid white;
 	}
 	#navbox:checked ~ nav{
 		display: block;
@@ -240,8 +240,7 @@ footer{
 	nav ul li{
 		display: block;
 		width: 100%;
-		padding: 2px 0;
-		border-bottom: 1px solid black;
+		padding: 5px 0;
 	}
 	nav ul li a{
 		display: block;
@@ -250,8 +249,5 @@ footer{
 	a.on, nav ul li a:hover{
 		color: #0088FF;
 		transition: 0.3s;
-	}
-	#bottom{
-		border-bottom: none;
 	}
 }
