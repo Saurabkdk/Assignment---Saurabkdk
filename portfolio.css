@@ -1,0 +1,170 @@
+body{
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+.overalllayout{
+	display: grid;
+	grid-template-rows: 0.6fr 4fr 1fr 0.8fr;
+	grid-template-columns: 1fr 0.5fr 1fr; 
+	height: 100vh;
+	grid-template-areas: 
+	"header header header"
+	"main main main"
+	"purpose purpose purpose"
+	"footer footer footer";
+	/*grid-gap: 10% 0.5%;*/
+}
+.header{
+	grid-area: header;
+	background-image: url(color.jpg); 
+	background-size: cover;
+	position: relative;
+}
+.name{
+	width: 15%;
+	float: left;
+	font-size: 1.8rem;
+	padding-left: 1%;
+}
+#name{
+	margin: 0;
+	color: black;
+	font-family: "Fredericka the Great";
+	font-weight: bold;
+	line-height: 2.5;
+	text-shadow: 5px 5px 5px lightblue;
+	font-size: 2rem;
+	letter-spacing: 0.5rem;
+}
+nav{
+	width: 80%;
+	float: left;
+	padding-left: 15%;
+	padding-top: 0.8%;
+}
+nav ul{
+	list-style: none;
+} 
+nav ul li{
+	float: left;
+	margin-left: 5%;
+	font-size: 1.1rem;
+	padding: 0.25% 1% 1% 0.25%;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+a.on, nav li a:hover{
+	color: orange;
+	transition: 0.3s;
+}
+#navbox{
+	display: none;
+}
+
+
+
+
+
+
+.main{
+	grid-area: main;
+	display: grid;
+	grid-template-rows: 3fr 1fr;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-areas: 
+	"animationpart animationpart welcome"
+	"animationpart animationpart tagline";
+	padding: 0.5%;
+	grid-gap: 2% 0.5%;
+	background-color: lightcoral;
+}
+.animationpart{
+	grid-area: animationpart;
+	background-color: lightgreen;
+}
+.welcome{
+	grid-area: welcome;
+	background-color: lightgreen;
+}
+.tagline{
+	grid-area: tagline;
+	background-color: lightgreen;
+}
+.purpose{
+	grid-area: purpose;
+	background-color: lightblue;
+	margin-top: 1%;
+}
+.purposeexplanation{
+	grid-area: purposeexplanation;
+	background-color: lightblue;
+	margin-top: 1%;
+}
+footer{
+	grid-area: footer;
+	background-color: lightblue;
+	margin-top: 1%;
+}
+
+
+
+@media screen and (max-width: 700px){
+	nav{
+		float:none;
+		padding: 0;
+		display: none;
+		width: 100%;
+		margin: 0;
+	}
+	.name{
+		float:none;
+	}
+	nav ul{
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li{
+		float: none;
+		margin: 1%;
+	}
+	#navbox{
+		display: none;
+	}
+	.icon{
+		position: absolute;
+		right: 5px;
+		top: 30px;
+		width: 26px;
+		height: 25px;
+	}
+	.icon span{
+		display: block;
+		height: 8px;
+		width: 25px;
+		border-top: 3px solid black;
+	}
+	#navbox:checked ~ nav{
+		display: block;
+	}
+	nav ul li{
+		display: block;
+		width: 100%;
+		padding: 2px 0;
+		border-bottom: 1px solid black;
+	}
+	nav ul li a{
+		display: block;
+		width: 100%;
+	}
+	a.on, nav ul li a:hover{
+		color: #0088FF;
+		transition: 0.3s;
+	}
+	#bottom{
+		border-bottom: none;
+	}
+}
