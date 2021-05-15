@@ -39,7 +39,7 @@ header{
 	line-height: 2.5;
 	text-shadow: 3px 3px 3px lightblue;
 	font-size: 2rem;
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.2rem;
 }
 nav{
 	width: 80%;
@@ -92,7 +92,7 @@ nav ul li a{
 	background-image: url(motivation4.jpg);
 	background-size: cover;
 	border-radius: 5px;
-	animation: animationpart1 20s cubic-bezier(1,0,0.5,0) infinite;
+	animation: animationpart1 40s cubic-bezier(1,0,0.5,0) infinite;
 	box-shadow: 5px 5px 5px 5px black;
 }
 @keyframes animationpart1{
@@ -117,7 +117,7 @@ nav ul li a{
 	background-image: url(motivation8.jpg);
 	background-size: cover;
 	border-radius: 5px;
-	animation: animationpart2 20s cubic-bezier(1,0,0.5,0) infinite 3s;
+	animation: animationpart2 40s cubic-bezier(1,0,0.5,0) infinite 5s;
 	box-shadow: 5px 5px 5px 5px black;
 }
 @keyframes animationpart2{
@@ -151,7 +151,7 @@ nav ul li a{
 }
 .welcome p:nth-child(2){
 	font-size: 2rem;
-	margin: 1%;
+	margin: 3%;
 }
 .welcome p:nth-child(3){
 	font-size: 2rem;
@@ -169,7 +169,7 @@ nav ul li a{
 	font-size: 1.5rem;
 	margin: 1%;
 	color: white;
-	word-spacing: 1em;
+	word-spacing: 0.2em;
 	letter-spacing: 0.1rem;
 	font-weight: bold;
 }
