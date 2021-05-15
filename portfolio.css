@@ -8,7 +8,7 @@ body{
 	display: grid;
 	grid-template-rows: 0.3fr 4fr 1fr 0.8fr;
 	grid-template-columns: 1fr 0.5fr 1fr; 
-	height: 100%;
+	height: 100vh;
 	grid-template-areas: 
 	"header header header"
 	"main main main"
@@ -34,12 +34,11 @@ header{
 #name{
 	margin: 0;
 	color: white;
-	font-family: "Fredericka the Great";
 	font-weight: bold;
 	line-height: 2.5;
-	text-shadow: 3px 3px 3px lightblue;
+	text-shadow: 1px 1px 1px lightblue;
 	font-size: 2rem;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
 }
 nav{
 	width: 80%;
@@ -85,7 +84,7 @@ nav ul li a{
 	grid-gap: 2% 0.5%;
 	background-image: url(background.jpg);
 	background-size: cover;
-	height: 90vh;
+	/*background-color: #8DDAD6;*/
 }
 .animationpart1{
 	grid-area: animationpart1;
@@ -93,7 +92,7 @@ nav ul li a{
 	background-size: cover;
 	border-radius: 5px;
 	animation: animationpart1 40s cubic-bezier(1,0,0.5,0) infinite;
-	box-shadow: 5px 5px 5px 5px black;
+	box-shadow: -5px 5px 5px 5px black;
 }
 @keyframes animationpart1{
 	0%{
@@ -147,11 +146,10 @@ nav ul li a{
 .welcome p:first-child{
 	font-size: 4rem;
 	margin: 1%;
-	/*text-shadow: 5px 5px 5px black;*/
 }
 .welcome p:nth-child(2){
 	font-size: 2rem;
-	margin: 3%;
+	margin: 2%;
 }
 .welcome p:nth-child(3){
 	font-size: 2rem;
@@ -177,9 +175,10 @@ nav ul li a{
 	grid-area: tagline;
 	color: black;
 	text-align: center;
-	padding: 4%;
+	padding: 5%;
 	font-size: 1.3rem;
 	font-weight: bold;
+	font-family: Alegreya;
 }
 
 
@@ -188,21 +187,49 @@ nav ul li a{
 
 .purpose{
 	grid-area: purpose;
-	background-color: lightblue;
-	margin-top: 2%;
-	
+	margin: 1%;
+	font-family: Handlee;
+	font-size: 2rem;
+	margin: 7% 3%;
+	padding: 1% 2%;
+	display: flex;
 }
-.purposeexplanation{
-	grid-area: purposeexplanation;
-	background-color: lightblue;
-	
+.intro{
+	margin: 3%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #80D7F9, white);
 }
+.intro2{
+	margin: 3%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #F9A280, white);
+}
+
+
+
+
+
+
 footer{
 	grid-area: footer;
-	background-color: lightblue;
-	
-	
+	background-color: black;
+	margin-top: 1%;
+	color: white;
+	font-size: 1.3rem;
+	text-align:center ;
 }
+footer p{
+	margin: 1%;
+}
+footer p:nth-child(2){
+	color: orange;
+}
+
+
 
 
 
@@ -256,5 +283,53 @@ footer{
 	.on, nav ul li a:hover{
 		color: orange;
 		transition: 0.3s;
+	}
+	.main{
+		grid-template-rows: 1fr 2fr 0.5fr;
+		grid-template-columns: 2fr;
+		grid-template-areas: 
+		"welcome"
+		"animationpart1"
+		"tagline";
+	}
+	.tagline{
+		color: white;
+	}
+	.purpose{
+		flex-direction: column;
+	}
+	.welcome p:nth-child(3){
+		color:white;
+	}
+	.welcome p:nth-child(4){
+		color: black;
+	}
+	.welcome p:nth-child(5){
+		color: black;
+	}
+}
+@media screen and (max-width: 575px){
+	.main{
+		grid-template-rows: 1fr 1.5fr 0.5fr;
+		grid-template-columns: 2fr;
+		grid-template-areas: 
+		"welcome"
+		"animationpart1"
+		"tagline";
+	}
+	.tagline{
+		color: white;
+}
+@media screen and (max-width: 402px){
+	.main{
+		grid-template-rows: 1fr 1fr 0.5fr;
+		grid-template-columns: 2fr;
+		grid-template-areas: 
+		"welcome"
+		"animationpart1"
+		"tagline";
+	}
+	.tagline{
+		color: white;
 	}
 }
