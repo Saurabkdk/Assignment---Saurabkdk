@@ -246,7 +246,12 @@ p{
 	width:50%;
 	height: 30%;
 }
-
+.reportmain p{
+	font-family: Alegreya;
+}
+.reportmain h1, h2, h3{
+	font-family: Girassol;
+}
 
 
 
