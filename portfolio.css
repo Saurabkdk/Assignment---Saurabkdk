@@ -1,0 +1,335 @@
+body{
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+.overalllayout{
+	display: grid;
+	grid-template-rows: 0.3fr 4fr 1fr 0.8fr;
+	grid-template-columns: 1fr 0.5fr 1fr; 
+	height: 100vh;
+	grid-template-areas: 
+	"header header header"
+	"main main main"
+	"purpose purpose purpose"
+	"footer footer footer";
+	/*grid-gap: 5% 0.5%;*/
+}
+header{
+	grid-area: header;
+/*	background-image: url(background1.jpg); 
+	background-size: cover;*/
+	/*background: linear-gradient(to right, #101010, #101010);*/
+	background-color: black;
+	position: relative;
+	/*border-bottom: 1px solid white;*/
+}
+.name{
+	width: 15%;
+	float: left;
+	font-size: 1.8rem;
+	padding-left: 1%;
+}
+#name{
+	margin: 0;
+	color: white;
+	font-weight: bold;
+	line-height: 2.5;
+	text-shadow: 1px 1px 1px lightblue;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+}
+nav{
+	width: 80%;
+	float: left;
+	padding-left: 12.3%;
+	padding-top: 0.8%;
+}
+nav ul{
+	list-style: none;
+} 
+nav ul li{
+	float: left;
+	margin-left: 5%;
+	font-size: 1.1rem;
+	padding: 0.25% 1% 1% 0.25%;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.on, nav li a:hover{
+	color: orange;
+	transition: 0.3s;
+}
+#navbox{
+	display: none;
+}
+
+
+
+
+
+
+.main{
+	grid-area: main;
+	display: grid;
+	grid-template-rows: 3fr 1fr;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: 
+	"animationpart1 welcome animationpart2"
+	"animationpart1 tagline animationpart2";
+	padding: 4%  2%;
+	grid-gap: 2% 0.5%;
+	background-image: url(background.jpg);
+	background-size: cover;
+	/*background-color: #8DDAD6;*/
+}
+.animationpart1{
+	grid-area: animationpart1;
+	background-image: url(motivation4.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	animation: animationpart1 40s cubic-bezier(1,0,0.5,0) infinite;
+	box-shadow: -5px 5px 5px 5px black;
+}
+@keyframes animationpart1{
+	0%{
+		background-image: url(motivation4.jpg);
+	}
+	25%{
+		background-image: url(motivation5.jpg);
+	}
+	50%{
+		background-image: url(motivation1.jpg);
+	}
+	75%{
+		background-image: url(motivation7.jpg);
+	}
+	100%{
+		background-image: url(motivation4.jpg);
+	}
+}
+.animationpart2{
+	grid-area: animationpart2;
+	background-image: url(motivation8.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	animation: animationpart2 40s cubic-bezier(1,0,0.5,0) infinite 5s;
+	box-shadow: 5px 5px 5px 5px black;
+}
+@keyframes animationpart2{
+	0%{
+		background-image: url(motivation8.jpg);
+	}
+	25%{
+		background-image: url(motivation6.jpg);
+	}
+	50%{
+		background-image: url(motivation3.jpg);
+	}
+	75%{
+		background-image: url(motivation2.jpg);
+	}
+	100%{
+		background-image: url(motivation8.jpg);
+	}
+}
+.welcome{
+	grid-area: welcome;
+	text-align: center;
+	color: white;
+	font-family: Girassol;
+	padding: 2%;
+}
+.welcome p:first-child{
+	font-size: 4rem;
+	margin: 1%;
+}
+.welcome p:nth-child(2){
+	font-size: 2rem;
+	margin: 2%;
+}
+.welcome p:nth-child(3){
+	font-size: 2rem;
+	margin: 1%;
+	word-spacing: 0.2rem;
+	color: black;
+}
+.welcome p:nth-child(4){
+	font-size: 1.5rem;
+	margin: 3% 1% 1% 1%;
+	font-weight: bold;
+	color: black;
+}
+.welcome p:nth-child(5){
+	font-size: 1.5rem;
+	margin: 1%;
+	color: white;
+	word-spacing: 0.2em;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+}
+.tagline{
+	grid-area: tagline;
+	color: black;
+	text-align: center;
+	padding: 5%;
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-family: Alegreya;
+}
+
+
+
+
+
+.purpose{
+	grid-area: purpose;
+	margin: 1%;
+	font-family: Handlee;
+	font-size: 2rem;
+	margin: 7% 3%;
+	padding: 1% 2%;
+	display: flex;
+}
+.intro{
+	margin: 3%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #80D7F9, white);
+}
+.intro2{
+	margin: 3%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #F9A280, white);
+}
+
+
+
+
+
+
+footer{
+	grid-area: footer;
+	background-color: black;
+	margin-top: 1%;
+	color: white;
+	font-size: 1.3rem;
+	text-align:center ;
+}
+footer p{
+	margin: 1%;
+}
+footer p:nth-child(2){
+	color: orange;
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+	nav{
+		float:none;
+		padding: 0;
+		display: none;
+		width: 100%;
+		margin: 0;
+	}
+	.name{
+		float:none;
+	}
+	nav ul{
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li{
+		float: none;
+		margin: 1%;
+	}
+	#navbox{
+		display: none;
+	}
+	.icon{
+		position: absolute;
+		right: 5px;
+		top: 30px;
+		width: 26px;
+		height: 25px;
+	}
+	.icon span{
+		display: block;
+		height: 8px;
+		width: 25px;
+		border-top: 3px solid white;
+	}
+	#navbox:checked ~ nav{
+		display: block;
+	}
+	nav ul li{
+		display: block;
+		width: 100%;
+		padding: 5px 0;
+	}
+	nav ul li a{
+		display: block;
+		width: 100%;
+	}
+	.on, nav ul li a:hover{
+		color: orange;
+		transition: 0.3s;
+	}
+	.main{
+		grid-template-rows: 1fr 2fr 0.5fr;
+		grid-template-columns: 2fr;
+		grid-template-areas: 
+		"welcome"
+		"animationpart1"
+		"tagline";
+	}
+	.tagline{
+		color: white;
+	}
+	.purpose{
+		flex-direction: column;
+	}
+	.welcome p:nth-child(3){
+		color:white;
+	}
+	.welcome p:nth-child(4){
+		color: black;
+	}
+	.welcome p:nth-child(5){
+		color: black;
+	}
+}
+@media screen and (max-width: 575px){
+	.main{
+		grid-template-rows: 1fr 1.5fr 0.5fr;
+		grid-template-columns: 2fr;
+		grid-template-areas: 
+		"welcome"
+		"animationpart1"
+		"tagline";
+	}
+	.tagline{
+		color: white;
+}
+@media screen and (max-width: 402px){
+	.main{
+		grid-template-rows: 1fr 1fr 0.5fr;
+		grid-template-columns: 2fr;
+		grid-template-areas: 
+		"welcome"
+		"animationpart1"
+		"tagline";
+	}
+	.tagline{
+		color: white;
+	}
+}
