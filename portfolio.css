@@ -7,7 +7,7 @@ body{
 .overalllayout{
 	display: grid;
 	grid-template-rows: 0.3fr 4fr 1fr 0.8fr;
-	grid-template-columns: 1fr 0.5fr 1fr; 
+	grid-template-columns: 1fr; 
 	height: 100vh;
 	grid-template-areas: 
 	"header header header"
@@ -230,6 +230,29 @@ footer p:nth-child(2){
 }
 
 
+.homedec{
+	display: flex;
+	justify-content: space-around;
+}
+.homedec img{
+	width: 45%;
+	height: 25%;
+}
+p{
+	font-size: 1.2rem;
+}
+#pandf{
+	margin: 1% 25%;
+	width:50%;
+	height: 30%;
+}
+.reportmain p{
+	font-family: Alegreya;
+}
+.reportmain h1, h2, h3{
+	font-family: Girassol;
+}
+
 
 
 
@@ -307,7 +330,25 @@ footer p:nth-child(2){
 	.welcome p:nth-child(5){
 		color: black;
 	}
+
+	.homedec{
+		flex-direction: column;
+	}
+	.homedec img{
+		width: 90%;
+		height: 60%;
+		margin: 1% 5%;
+	}
+	#pandf{
+	margin: 1% 10%;
+	width:80%;
+	height: 50%;
 }
+}
+
+
+
+
 @media screen and (max-width: 575px){
 	.main{
 		grid-template-rows: 1fr 1.5fr 0.5fr;
