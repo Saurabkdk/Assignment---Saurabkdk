@@ -181,14 +181,14 @@ nav ul li a{
 }
 .intro{
 	margin: 3%;
-	padding: 2%;
+	padding: 7%;
 	border: 3px solid black;
 	border-radius: 10px;
 	background: linear-gradient(to bottom, #80D7F9, white);
 }
 .intro2{
 	margin: 3%;
-	padding: 2%;
+	padding: 7%;
 	border: 3px solid black;
 	border-radius: 10px;
 	background: linear-gradient(to bottom, #F9A280, white);
