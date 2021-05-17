@@ -4,6 +4,8 @@ body{
 *{
 	box-sizing: border-box;
 }
+/* CSS for home page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Css for the layout of the home page */
 .overalllayout{
 	display: grid;
 	grid-template-rows: 0.3fr 4fr 1fr 0.8fr;
@@ -16,14 +18,12 @@ body{
 	"footer footer footer";
 	/*grid-gap: 5% 0.5%;*/
 }
+
+/* The header */
 header{
 	grid-area: header;
-/*	background-image: url(background1.jpg); 
-	background-size: cover;*/
-	/*background: linear-gradient(to right, #101010, #101010);*/
 	background-color: black;
 	position: relative;
-	/*border-bottom: 1px solid white;*/
 }
 .name{
 	width: 15%;
@@ -40,6 +40,8 @@ header{
 	font-size: 2rem;
 	letter-spacing: 0.1rem;
 }
+
+/* Navigation bar css */
 nav{
 	width: 80%;
 	float: left;
@@ -67,11 +69,7 @@ nav ul li a{
 	display: none;
 }
 
-
-
-
-
-
+/* The main division. Subsequent after header */
 .main{
 	grid-area: main;
 	display: grid;
@@ -79,7 +77,7 @@ nav ul li a{
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-areas: 
 	"animationpart1 welcome animationpart2"
-	"animationpart1 tagline animationpart2";
+	"animationpart1 student animationpart2";
 	padding: 4%  2%;
 	grid-gap: 2% 0.5%;
 	background-image: url(background.jpg);
@@ -87,13 +85,14 @@ nav ul li a{
 	background-position: center;
 	/*background-color: #8DDAD6;*/
 }
+
+/* Css for the left hand animation part */
 .animationpart1{
 	grid-area: animationpart1;
 	background-image: url(motivation5.jpg);
 	background-size: cover;
 	border-radius: 5px;
 	animation: animationpart1 40s cubic-bezier(1,0,0.5,0) infinite;
-	box-shadow: -5px 5px 5px 5px black;
 }
 @keyframes animationpart1{
 	0%{
@@ -112,13 +111,14 @@ nav ul li a{
 		background-image: url(motivation5.jpg);
 	}
 }
+
+/* Css for right hand animation part */
 .animationpart2{
 	grid-area: animationpart2;
 	background-image: url(motivation6.jpg);
 	background-size: cover;
 	border-radius: 5px;
 	animation: animationpart2 40s cubic-bezier(1,0,0.5,0) infinite 5s;
-	box-shadow: 5px 5px 5px 5px black;
 }
 @keyframes animationpart2{
 	0%{
@@ -137,6 +137,8 @@ nav ul li a{
 		background-image: url(motivation6.jpg);
 	}
 }
+
+/* Welcome section  */
 .welcome{
 	grid-area: welcome;
 	text-align: center;
@@ -153,8 +155,9 @@ nav ul li a{
 	margin: 2%;
 }
 
-.tagline{
-	grid-area: tagline;
+/* Student section */
+.student{
+	grid-area: student;
 	color: white;
 	text-align: center;
 	padding: 10% 2% 2% 2%;
@@ -162,14 +165,11 @@ nav ul li a{
 	font-weight: bold;
 	font-family: Alegreya;
 }
-.tagline p{
+.student p{
 	margin: 1%;
 }
 
-
-
-
-
+/* The purpose of the site div and shrt bio */
 .purpose{
 	grid-area: purpose;
 	margin: 1%;
@@ -185,6 +185,7 @@ nav ul li a{
 	border: 3px solid black;
 	border-radius: 10px;
 	background: linear-gradient(to bottom, #80D7F9, white);
+	box-shadow: 5px 5px 5px black;
 }
 .intro2{
 	margin: 3%;
@@ -192,13 +193,14 @@ nav ul li a{
 	border: 3px solid black;
 	border-radius: 10px;
 	background: linear-gradient(to bottom, #F9A280, white);
+	box-shadow: 5px 5px 5px black;
+}
+.intro:hover, .intro2:hover{
+	transition: transform 0.3s;
+	transform: translate(-3px,-3px);
 }
 
-
-
-
-
-
+/* The footer */
 footer{
 	grid-area: footer;
 	background-color: black;
@@ -213,19 +215,26 @@ footer p{
 footer p:nth-child(2){
 	color: orange;
 }
+/* CSS for home page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
+
+/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+	
+/* Designs pics */
 .homedec{
 	display: flex;
 	justify-content: space-around;
 }
 .homedec img{
-	width: 45%;
+	width: 30%;
 	height: 25%;
 }
 p{
 	font-size: 1.2rem;
 }
+
+/* Purpose and footer pic */
 #pandf{
 	margin: 1% 25%;
 	width:50%;
@@ -237,11 +246,18 @@ p{
 .reportmain h1, h2, h3{
 	font-family: Girassol;
 }
+.modulereview h1{
+	text-align: center; 
+}
+	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
-
+	/* Making the site responsive */
 
 @media screen and (max-width: 700px){
+	/* CSS for home page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+	/* For navigation bar */
 	nav{
 		float:none;
 		padding: 0;
@@ -292,25 +308,33 @@ p{
 		color: orange;
 		transition: 0.3s;
 	}
+	
+	/* For the main division */
 	.main{
 		grid-template-rows: 1fr 2fr 0.5fr;
 		grid-template-columns: 1fr;
 		grid-template-areas: 
 		"welcome"
 		"animationpart1"
-		"tagline";
+		"student";
 	}
-	.tagline{
+	.student{
 		color: white;
 		padding: 4% 2%;
-	}
-	.purpose{
-		flex-direction: column;
 	}
 	.welcome{
 		padding: 26%;
 	}
+	
+	/* Intro and purpose division */
+	.purpose{
+		flex-direction: column;
+	}
+	/* CSS for home page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+	
 
+	
+	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 	.homedec{
 		flex-direction: column;
 	}
@@ -324,10 +348,11 @@ p{
 	width:80%;
 	height: 50%;
 }
+	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 
-
+/* If for smaller widths, reponsive css */
 
 @media screen and (max-width: 500px){
 	.overalllayout{
@@ -339,9 +364,9 @@ p{
 		grid-template-areas: 
 		"welcome"
 		"animationpart1"
-		"tagline";
+		"student";
 	}
-	.tagline{
+	.student{
 		color: white;
 		padding:28% 0%;
 		
