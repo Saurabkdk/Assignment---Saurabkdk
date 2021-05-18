@@ -184,7 +184,7 @@ nav ul li a{
 	padding: 7%;
 	border: 3px solid black;
 	border-radius: 10px;
-	background: linear-gradient(to bottom, #80D7F9, white);
+	background: linear-gradient(to bottom, #FFB429, white);
 	box-shadow: 5px 5px 5px black;
 }
 .intro2{
@@ -192,7 +192,7 @@ nav ul li a{
 	padding: 7%;
 	border: 3px solid black;
 	border-radius: 10px;
-	background: linear-gradient(to bottom, #F9A280, white);
+	background: linear-gradient(to bottom, #67FF3B, white);
 	box-shadow: 5px 5px 5px black;
 }
 .intro:hover, .intro2:hover{
@@ -406,10 +406,12 @@ p{
 	}
 	.placeholderimg:hover{
 		box-shadow: 5px 5px 5px black;
+		transition: transform 0.2s;
+		transform: translate(-2px,-2px);
 	}
 	.portfoliomain2{
 		padding: 0.4% 1%;
-		text-align: center;
+		text-align: center; 
 	}
 	.portfoliomain2 p{
 		font-size: 1.5em;
