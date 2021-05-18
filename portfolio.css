@@ -407,7 +407,7 @@ p{
 	.placeholderimg:hover{
 		box-shadow: 5px 5px 5px black;
 		transition: transform 0.2s;
-		transform: translate(-2px,-2px);
+		transform: translate(-2px,-2px); 
 	}
 	.portfoliomain2{
 		padding: 0.4% 1%;
