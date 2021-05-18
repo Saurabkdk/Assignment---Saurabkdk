@@ -406,13 +406,15 @@ p{
 	}
 	.placeholderimg:hover{
 		box-shadow: 5px 5px 5px black;
+		transition: transform 0.2s;
+		transform: translate(-2px,-2px);
 	}
 	.portfoliomain2{
 		padding: 0.4% 1%;
-		text-align: center;
+		text-align: center; 
 	}
 	.portfoliomain2 p{
-		font-size: 1.5em;
+		font-size: 1.5em; 
 	} 
 	
 	/* Css for portfolio page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -489,7 +491,7 @@ p{
 		padding: 4% 2%;
 	}
 	.welcome{
-		padding: 26%;
+		padding: 26%; 
 	}
 	
 	/*  main1 division */
