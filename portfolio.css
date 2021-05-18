@@ -14,7 +14,7 @@ body{
 	grid-template-areas: 
 	"header header header"
 	"main main main"
-	"purpose purpose purpose"
+	"main1 main1 main1"
 	"footer footer footer";
 	/*grid-gap: 5% 0.5%;*/
 }
@@ -29,7 +29,7 @@ header{
 	width: 15%;
 	float: left;
 	font-size: 1.8rem;
-	padding-left: 1%;
+	padding-left: 1%; 
 }
 #name{
 	margin: 0;
@@ -170,8 +170,8 @@ nav ul li a{
 }
 
 /* The purpose of the site div and shrt bio */
-.purpose{
-	grid-area: purpose;
+.main1{
+	grid-area: main1;
 	margin: 1%;
 	font-family: Handlee;
 	font-size: 2rem;
@@ -222,11 +222,11 @@ footer p:nth-child(2){
 /* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 	
 /* Designs pics */
-.homedec{
+.reportimages{
 	display: flex;
 	justify-content: space-around;
 }
-.homedec img{
+.reportimages img{
 	width: 30%;
 	height: 25%;
 }
@@ -234,7 +234,7 @@ p{
 	font-size: 1.2rem;
 }
 
-/* Purpose and footer pic */
+/* main1 and footer pic */
 #pandf{
 	margin: 1% 25%;
 	width:50%;
@@ -251,7 +251,173 @@ p{
 }
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
+	
+	/* Css for portfolio page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+	
+	.portfoliomain{
+		padding: 1%;
+		height: 90%;
+	}
+	.portfoliomain a{
+		text-decoration: none;
+	}
+	.portfoliomain p{
+		font-family: Handlee;
+	}
+	.title{
+		text-align: center;
+		font-family: Alegreya;
+		margin: 1%;
+		height: 5%;
+	}
+	.firstline{
+		display: flex;
+		justify-content: center;
+		height: 45%;	
+		width: 98%;	
+		margin: 2% 1%;
+	}
+	.placeholder1{
+		display: flex;
+		flex-direction: column;
+		margin: 1%;
+		width: 100%;
+	}
+	.placeholder1 div:first-child{
+		background-color: lightgrey;
+		width: 100%;
+		height: 100%;
+		padding: 40% 20%;
+		color: grey;
+		font-size: 2rem;
+	}
+	.placeholder1 div:nth-child(2){
+		background-color: #FFE021;
+		margin: 2% 0;
+		padding: 2% 5%;
+		border-radius: 5px;
+	}
+	.placeholder2{
+		display: flex;
+		flex-direction: column;
+		margin: 1%;
+		width: 100%;
+	}
+	.placeholder2 div:first-child{
+		background-color: lightgrey;
+		width: 100%;
+		height: 100%;
+		padding: 40% 20%;
+		color: grey;
+		font-size: 2rem;
+	}
+	.placeholder2 div:nth-child(2){
+		margin: 2% 0;
+		background-color: #AFFF21;
+		padding: 2% 5%;
+		border-radius: 5px;
+	}
+	.placeholder3{
+		display: flex;
+		flex-direction: column;
+		margin: 1%;
+		width: 100%;
+	}
+	.placeholder3 div:first-child{
+		background-color: lightgrey;
+		width: 100%;
+		height: 100%;
+		padding: 40% 20%;
+		color: grey;
+		font-size: 2rem;
+	}
+	.placeholder3 div:nth-child(2){
+		background-color: #FF7121;
+		margin: 2% 0;
+		padding: 2% 5%;
+		border-radius: 5px;
+	}
+	.secondline{
+		display: flex;
+		justify-content: center;
+		height: 45%;	
+		width: 98%;	
+		margin: 2% 1%;
+	}
+	.placeholder4{
+		display: flex;
+		flex-direction: column;
+		margin: 1%;
+		width: 100%;
+	}
+	.placeholder4 div:first-child{
+		background-color: lightgrey;
+		width: 100%;
+		height: 100%;
+		padding: 40% 20%;
+		color: grey;
+		font-size: 2rem;
+	}
+	.placeholder4 div:nth-child(2){
+		background-color: #61EE19;
+		margin: 2% 0;
+		padding: 2% 5%;
+		border-radius: 5px;
+	}
+	.placeholder5{
+		display: flex;
+		flex-direction: column;
+		margin: 1%;
+		width: 100%;
+	}
+	.placeholder5 div:first-child{
+		background-color: lightgrey;
+		width: 100%;
+		height: 100%;
+		padding: 40% 20%;
+		color: grey;
+		font-size: 2rem;
+	}
+	.placeholder5 div:nth-child(2){
+		margin: 2% 0;
+		background-color: #3876F0;
+		padding: 2% 5%;
+		border-radius: 5px;
+	}
+	.placeholder6{
+		display: flex;
+		flex-direction: column;
+		margin: 1%;
+		width: 100%;
+	}
+	.placeholder6 div:first-child{
+		background-color: lightgrey;
+		width: 100%;
+		height: 100%;
+		padding: 40% 20%;
+		color: grey;
+		font-size: 2rem;
+	}
+	.placeholder6 div:nth-child(2){
+		background-color: #F03876;
+		margin: 2% 0;
+		padding: 2% 5%;
+		border-radius: 5px;
+	}
+	.placeholderimg:hover{
+		box-shadow: 5px 5px 5px black;
+	}
+	.portfoliomain2{
+		padding: 0.4% 1%;
+		text-align: center;
+	}
+	.portfoliomain2 p{
+		font-size: 1.5em;
+	} 
+	
+	/* Css for portfolio page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	
 	/* Making the site responsive */
 
 @media screen and (max-width: 700px){
@@ -326,8 +492,8 @@ p{
 		padding: 26%;
 	}
 	
-	/* Intro and purpose division */
-	.purpose{
+	/*  main1 division */
+	.main1{
 		flex-direction: column;
 	}
 	/* CSS for home page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
