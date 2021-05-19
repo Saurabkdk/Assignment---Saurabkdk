@@ -235,10 +235,18 @@
 	}
 
 	/* main1 and footer pic */
-	#pandf{
+	.twoimages{
 		margin: 1% 25%;
 		width:50%;
 		height: 30%;
+	}
+	.oneimage{
+		margin: 1% 25%;
+		width:50%;
+		height: 30%;
+	}
+	.reportmain{
+		grid-area: main;
 	}
 	.reportmain p{
 		font-family: Alegreya;
@@ -249,14 +257,18 @@
 	.modulereview h1{
 		text-align: center; 
 	}
+	.reportmain1{
+		grid-area: main1;
+	}
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 	
 	/* Css for portfolio page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 	
 	.portfoliomain{
+		grid-area:main;
 		padding: 1%;
-		height: 90%;
+		height: 100%;
 	}
 	.portfoliomain a{
 		text-decoration: none;
@@ -410,8 +422,10 @@
 		transform: translate(-2px,-2px);
 	}
 	.portfoliomain2{
-		padding: 0.4% 1%;
+		grid-area: main1; 
+		padding: 1% 1% 2%;
 		text-align: center; 
+		font-family: Handlee;
 	}
 	.portfoliomain2 p{
 		font-size: 1.5em; 
@@ -425,10 +439,13 @@
 		grid-area: main;
 		text-align: center;
 	}
+	.contactmain2{
+		grid-area:main1;
+		margin: 1%;
+	}
 	.contactmain2 p{
-		gird-area:main1;
 		font-family: Handlee;
-		margin: 5.2% 1% 3%;
+		margin: 4% 1% 2.5%;
 		font-size: 1.5rem;
 		text-align: center;
 	}
@@ -466,7 +483,7 @@
 		border: 3px solid black;
 		border-radius: 10px;
 		padding: 3%;
-		font-family: Handlee;
+		font-family: Handlee; 
 	}
 	fieldset{
 		border:none;
@@ -481,12 +498,6 @@
 	input[type=text]:focus, input[type=date]:focus, input[type=password]:focus, input[type=email]:focus{
 		background-color: lightgrey;
 	}
-	#myname{
-		font-size: 2rem;
-	}
-	#inactive{
-		font-size: 1rem;
-	}
 	input[type=submit], input[type=reset]{
 		width: 15%;
 		height: 30px;
@@ -494,6 +505,38 @@
 		font-family: Alegreya;
 		margin: 2% 2% 0;
 	}
+	#arrow{
+		animation: arrow 5s linear infinite;
+		margin-bottom: 1%;
+	}
+	@keyframes arrow{
+		0%{
+			transition: none;
+		}
+		25%{
+			transition: transform 1s;
+			transform: rotate(30deg);
+		}
+		50%{
+			transition: transform 1s;
+			transform: rotate(0deg);
+		}
+		75%{
+			transition: transform 1s;
+			transform: rotate(-30deg);
+		}
+		100%{
+			transition: transform 1s;
+			transform: rotate(0deg);
+		}
+	}
+	#myname{
+		font-size: 2rem;
+	}
+	#inactive{
+		font-size: 1rem;
+	}
+	
 	
 	/* CSS for contact page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 	
@@ -582,16 +625,19 @@
 	.title{
 		height: 2.5%;
 	}
+	.portfoliomain{
+		padding: 1% 2% 0 0;
+	}
 	.portfoliomain2{
-		padding: 40% 1%;
+		padding: 0% 1% 16%;
 	}
 	.firstline{
 		flex-direction: column;
-		margin-top: -6%;
+		margin-top: 0%;
 	}
 	.secondline{
 		flex-direction: column;
-		margin-top: 12%;
+		margin-top: 20%;
 	}
 	
 	/* CSS for portfolio page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
