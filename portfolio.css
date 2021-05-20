@@ -222,22 +222,20 @@
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 		
 	/* Designs pics */
-	.reportimages{
+	.threeimages{
 		display: flex;
 		justify-content: space-around;
 	}
-	.reportimages img{
+	.threeimages img{
 		width: 30%;
 		height: 25%;
 	}
-	p{
-		font-size: 1.2rem;
-	}
-
-	/* main1 and footer pic */
 	.twoimages{
-		margin: 1% 25%;
-		width:50%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.twoimages img{
+		width:45%;
 		height: 30%;
 	}
 	.oneimage{
@@ -247,9 +245,11 @@
 	}
 	.reportmain{
 		grid-area: main;
+		padding: 1%;
 	}
 	.reportmain p{
 		font-family: Alegreya;
+		font-size: 1.2rem;
 	}
 	.reportmain h1, .reportmain h2, .reportmain h3{
 		font-family: Girassol;
@@ -259,7 +259,14 @@
 	}
 	.reportmain1{
 		grid-area: main1;
+		font-family: Alegreya;
+		font-size: 1.2rem;
+		padding: 1%;
 	}
+	.modulereview, .home, .portfolio, .contact, .cv{
+		padding: 1%; 
+	}
+	
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 	
@@ -587,7 +594,7 @@
 	.leftside{
 		background-color: #F7F7F7;
 		padding-left: 1%;
-		padding-top: 1.5%;
+		padding-top: 1.5%; 
 	}
 	.rightside{
 		background-color: #EAEAEA;
@@ -777,19 +784,28 @@
 	
 	
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-	.reportimages{
+	.threeimages{
 		flex-direction: column;
 	}
-	.reportimages img{
+	.threeimages img{
 		width: 90%;
 		height: 60%; 
 		margin: 1% 5%;
 	}
-	#pandf{
+	.oneimage{
 	margin: 1% 10%;
 	width:80%;
 	height: 50%;
-}
+	}
+	.twoimages{
+		flex-direction: column;
+	}
+	.twoimages img{
+		width: 90%;
+		height: 40%;
+		margin: 1% 5%;
+	}
+	
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
