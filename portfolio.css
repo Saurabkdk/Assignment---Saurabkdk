@@ -245,7 +245,7 @@
 	}
 	.reportmain{
 		grid-area: main;
-		padding: 1%;
+		padding: 0% 1%;
 	}
 	.reportmain p{
 		font-family: Alegreya;
@@ -254,7 +254,7 @@
 	.reportmain h1, .reportmain h2, .reportmain h3{
 		font-family: Girassol;
 	}
-	.modulereview h1{
+	.reportmain h1{
 		text-align: center;  
 	}
 	.reportmain1{
@@ -263,8 +263,23 @@
 		font-size: 1.2rem;
 		padding: 1%;
 	}
-	.modulereview, .home, .portfolio, .contact, .cv{
+	.modulereview{
 		padding: 1%; 
+		background-color: greenyellow;		
+	}
+	.home{
+		padding: 1%; 
+	}
+	.portfolio{
+		padding: 1%;
+		background-color: lightsalmon;
+	}
+	.contact{
+		padding: 1%;
+	}
+	.cv{
+		padding: 1%;
+		background-color: powderblue;
 	}
 	
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -288,6 +303,9 @@
 		font-family: Alegreya;
 		margin: 1%;
 		height: 5%;
+	}
+	.title h1{
+		margin-bottom: 0;
 	}
 	.firstline{
 		display: flex;
@@ -510,7 +528,7 @@
 		width: 15%;
 		height: 30px;
 		font-size: 1.1rem;
-		font-family: Alegreya;
+		font-family: Alegreya; 
 		margin: 2% 2% 0;
 	}
 	#arrow{
@@ -590,6 +608,7 @@
 	}
 	.bodyofcv{
 		display:flex;
+		font-size: 1.1rem;
 	}
 	.leftside{
 		background-color: #F7F7F7;
@@ -666,7 +685,7 @@
 	}
 	nav ul{
 		margin: 0;
-		padding: 0;
+		padding: 0; 
 	}
 	nav ul li{
 		float: none;
@@ -675,6 +694,12 @@
 	#navbox{
 		display: none;
 	}
+	#navbox:checked ~ nav{
+		display: block;
+	}
+	/* I learned the working of hamburger icon whose codes are above from lines 675-698 from a youtube video. */
+	/* The video is properly referenced at the end of the site report page. */
+	
 	.icon{
 		position: absolute;
 		right: 5px;
@@ -688,17 +713,14 @@
 		width: 25px;
 		border-top: 3px solid white;
 	}
-	#navbox:checked ~ nav{
-		display: block;
-	}
 	nav ul li{
 		display: block;
 		width: 100%;
 		padding: 5px 0;
 	}
 	nav ul li a{
-		display: block;
 		width: 100%;
+		display: block;
 	}
 	.on, nav ul li a:hover{
 		color: orange;
@@ -733,6 +755,9 @@
 	.title{
 		height: 2.5%;
 	}
+	.title h1{
+		margin-bottom: 4%;
+	}
 	.portfoliomain{
 		padding: 1% 2% 0 0;
 	}
@@ -745,7 +770,7 @@
 	}
 	.secondline{
 		flex-direction: column;
-		margin-top: 20%;
+		margin-top: 20%; 
 	}
 	
 	/* CSS for portfolio page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
