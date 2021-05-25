@@ -307,6 +307,33 @@
 		padding: 1%;
 		background-color: powderblue;
 	}
+	.validation{
+		width: 80%;
+		margin: 1% 10% 0%;
+	}
+	.validationtext{
+		text-align:center;
+		margin-top: 0%;
+		color: brown;
+	}
+	.validhead{
+		width: 60%;
+		display: flex;
+		margin: 1% 20%;
+	}
+	.validhead a{
+		text-decoration: none;
+		margin: 0 5%;
+		font-size: 1.5rem;
+		color: darkorange;
+	}
+	.valid hr{
+		width: 92%;
+	}
+	.valid p{
+		font-size: 1.2rem;
+	} 
+	
 	
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -858,6 +885,9 @@
 		width: 90%;
 		height: 40%;
 		margin: 1% 5%;
+	}
+	.validhead{
+		display: grid;
 	}
 	
 	/* CSS for site report page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
