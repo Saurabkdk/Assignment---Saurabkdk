@@ -546,7 +546,7 @@
 		margin: 2%;
 	}
 	.formdiv{
-		background-color: #F94C3F;
+		background-color: #FF5B4F;
 		padding: 2%;
 	}
 	.form{
@@ -554,7 +554,7 @@
 		border: 3px solid black;
 		border-radius: 10px;
 		padding: 0.5%;
-		background: linear-gradient(45deg,#7AF50A,#95F73B, #7AF50A);
+		background: linear-gradient(45deg,#A2FF42,#A9FF50, #A2FF42);
 	}
 	form{
 		width: 100%;
