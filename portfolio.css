@@ -80,7 +80,7 @@
 		"animationpart1 student animationpart2";
 		padding: 3.3%  2%;
 		grid-gap: 2% 0.5%;
-		background-image: url(background.jpg);
+		background-image: url(background.jpg);  /*2021. HD Wallpapers, Desktop High Definition Wallpapers. Available at: <http://sf.co.ua/id17420>*/
 		background-size: contain;
 		background-position: center;
 		/*background-color: #8DDAD6;*/
@@ -96,16 +96,16 @@
 	}
 	@keyframes animationpart1{
 		0%{
-			background-image: url(motivation5.jpg);
+			background-image: url(motivation5.jpg);  /*8-images Blog .2021. Quotes you don't always need a logical reason for doing everything in your life. Available at: <https://8-images.blogspot.com/2017/09/quotes-you-dont-always-need-logical.html>*/
 		}
 		25%{
-			background-image: url(motivation4.jpg);
+			background-image: url(motivation4.jpg);  /*2021. Failure is the key to success; each mistake teaches us something. - Morihei Ueshiba. Available at: <https://www.pinterest.com/pin/686799011901924052/>*/
 		}
 		50%{
-			background-image: url(motivation6.jpg);
+			background-image: url(motivation6.jpg);  /*THE RANDOM VIBEZ. 2021. 180 Short Motivational Quotes For Success In Life. Available at: <https://www.therandomvibez.com/short-motivation-quotes/>*/
 		}
 		75%{
-			background-image: url(motivation2.jpg);
+			background-image: url(motivation2.jpg);  /*BOOST UP LIVING. 2021. Motivational Quotes With Deep Meaning For Your Life. Available at: <https://boostupliving.com/motivational-quotes-with-deep-meaning-for-your-life/>*/
 		}
 		100%{
 			background-image: url(motivation5.jpg);
