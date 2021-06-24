@@ -202,6 +202,7 @@
 		transition: transform 0.3s; 
 		transform: translate(-3px,-3px);
 	}
+	/*CSS for overview of pages*/
 	.overview{
 		text-align: center;
 		margin-top: 10%;
@@ -307,6 +308,7 @@
 		padding: 1%;
 		background-color: powderblue;
 	}
+	/*Validation reports CSS*/
 	.validation{
 		width: 80%;
 		margin: 1% 10% 0%;
@@ -360,6 +362,7 @@
 	.title h1{
 		margin-bottom: 0;
 	}
+	/*CSS for first row of placeholder images*/
 	.firstline{
 		display: flex;
 		justify-content: center;
@@ -367,6 +370,7 @@
 		width: 98%;	
 		margin: 1% 1%;
 	}
+	/*Placeholder image 1 css*/
 	.placeholder1{
 		display: flex;
 		flex-direction: column;
@@ -387,6 +391,7 @@
 		padding: 2% 5%;
 		border-radius: 5px;
 	}
+	/*Placeholder image 2 css*/
 	.placeholder2{
 		display: flex;
 		flex-direction: column;
@@ -407,6 +412,7 @@
 		padding: 2% 5%;
 		border-radius: 5px;
 	}
+	/*Placeholder image 3 css*/
 	.placeholder3{
 		display: flex;
 		flex-direction: column;
@@ -427,6 +433,7 @@
 		padding: 2% 5%;
 		border-radius: 5px;
 	}
+	/*CSS for second row of placeholder images*/
 	.secondline{
 		display: flex;
 		justify-content: center;
@@ -434,6 +441,7 @@
 		width: 98%;	
 		margin: 2% 1%;
 	}
+	/*Placeholder image 4 css*/
 	.placeholder4{
 		display: flex;
 		flex-direction: column;
@@ -454,6 +462,7 @@
 		padding: 2% 5%;
 		border-radius: 5px;
 	}
+	/*Placeholder image 5 css*/
 	.placeholder5{
 		display: flex;
 		flex-direction: column;
@@ -474,6 +483,7 @@
 		padding: 2% 5%;
 		border-radius: 5px;
 	} 
+	/*Placeholder image 6 css*/
 	.placeholder6{
 		display: flex;
 		flex-direction: column;
@@ -494,6 +504,7 @@
 		padding: 2% 5%;
 		border-radius: 5px;
 	}
+	/*Giving transform and transition effect to the images*/
 	.placeholderimg:hover{
 		box-shadow: 5px 5px 5px black;
 		transition: transform 0.2s;
@@ -584,6 +595,7 @@
 		font-family: Alegreya; 
 		margin: 2% 2% 0;
 	}
+	/*Css for the arrow animation*/
 	#arrow{
 		animation: arrow 5s linear infinite;
 		margin-bottom: 1%;
@@ -672,6 +684,7 @@
 		background-color: #EAEAEA;
 		padding-left: 2%;
 	}
+	/*Making the headings and dates structures using flex*/
 	.college, .highschool, .school, .certification, .extracurricular, .interests{
 		display:flex;
 	}
@@ -685,11 +698,13 @@
 		margin: 0;
 		padding: 0;
 	}
+	/*Css for the rating circles*/
 	.rating{
 		height: 30px;
 		padding-left: 4%; 
 		padding-top: 4%;
 	}
+	/*Marking the circles*/
 	.mark{
 		width: 12px;
 		height: 12px;
@@ -698,6 +713,7 @@
 		float: left;
 		margin-left: 1%;
 	}
+	/*Leaving the circles unmarked*/
 	.unmark{
 		width: 12px;
 		height: 12px;
@@ -744,9 +760,11 @@
 		float: none;
 		margin: 1%;
 	}
+	/*Making the navigation bar disappear in responsive view*/
 	#navbox{
 		display: none;
 	}
+	/*Making the navigation bar appear as you press on the hamburger icon*/
 	#navbox:checked ~ nav{
 		display: block;
 	}
